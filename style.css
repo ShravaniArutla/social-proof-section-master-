@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+}
+
+h2,
+p {
+    margin: 0;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 100%);
+    background-image: url("./images/bg-pattern-top-mobile.svg"), url("./images/bg-pattern-bottom-mobile.svg");
+    background-position: top left, right bottom;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    padding: 50px 50px 20px 50px;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    color: hsl(300, 43%, 22%);
+}
+
+.header p {
+    color: hsl(303, 10%, 53%);
+    font-size: 18px;
+    padding: 0 15px 30px 15px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.rating {
+    text-align: center;
+}
+
+.star {
+    background-color: #faf3fa;
+    padding: 15px 0;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.star p {
+    margin-top: 10px;
+    color: hsl(300, 43%, 22%);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.sub-container2 {
+    padding: 15px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.box {
+    background-color: hsl(300, 43%, 22%);
+    padding: 35px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box p {
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+}
+
+.box q {
+    color: hsl(0, 0%, 100%);
+    line-height: 1.2;
+    font-size: 18px;
+
+}
+
+.box span {
+    color: hsl(333, 80%, 67%);
+    font-size: 18px;
+    text-align: center;
+}
+
+.box img {
+    border-radius: 50px;
+    border-image-width: 5px;
+    height: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+    .sub-container1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    body {
+        margin: 70px 105px;
+        background-image: url("./images/bg-pattern-top-desktop.svg"), url("./images/bg-pattern-bottom-desktop.svg");
+    }
+
+    h2 {
+        padding: 30px;
+        font-weight: 900;
+        font-size: 50px;
+        width: 391px;
+        text-align: left;
+
+    }
+
+    .star {
+        padding: 15px 25px;
+    }
+
+    .header p {
+        font-size: 22px;
+        padding: 30px;
+        width: 474px;
+        line-height: 1.2;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    /* .sub-container1 {
+        align-items: center
+    } */
+
+    .header p {
+        width: 596px;
+    }
+
+    .star {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 35px;
+        gap: 10px;
+        border-radius: 10px;
+        width: fit-content;
+
+    }
+
+    .star p {
+        padding-left: 20px;
+    }
+
+    /* .rating {
+            width: 100%;
+        } */
+
+    .sub-container2 {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .reviews {
+        padding-right: 60px;
+    }
+
+    .report {
+        margin-left: 80px;
+    }
+
+    .bestTech {
+        margin-left: 140px;
+        padding-right: 60px;
+
+    }
+
+    .box {
+        height: fit-content;
+    }
+
+    .box2 {
+        margin-top: 30px;
+    }
+
+    .box3 {
+        margin-top: 60px;
+    }
+}
